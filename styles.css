@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    background-color: aqua;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title{
+    padding: 0.5rem 0 1rem;
+    color: rgb(1, 1, 88);
+}
+
+form{
+    width: 320px;
+}
+
+#item{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+}
+
+#add-btn{
+    background-color: blue;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.row-2{
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0.1rem 0.25rem;
+    margin: 0.2rem 0;
+}
+
+.list-item:hover>.cross{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.list, .to-do-item{
+    padding: 0.25rem;
+}
+
+span{
+    display: block;
+    background-color: #858583;
+    width: 2px;
+    height: 14px;
+}
+.cross{
+    display: none;
+}
+
+.span1{
+    transform: rotateZ(45deg);
+}
+
+.span2{
+    transform:rotateZ(90deg);
+} 
+
+.completed{
+    color: #444;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+@media screen and (max-width:400px) {
+    body{
+        background-color: red;
+    }
+
+    .container{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #item{
+        display: block;
+        margin: 0.5rem auto;
+        width: 100%;
+    }
+
+    #add-btn{
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
